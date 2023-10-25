@@ -1,3 +1,6 @@
+#####################################
+#Please run the code line by line
+#####################################
 library(zoo)
 library(ggplot2)
 doInit = TRUE
@@ -257,10 +260,12 @@ while (end_Date < end_end_date) {
     readline(prompt = "Press Enter to continue...")
     stopp = FALSE
   }
-  if(end_Date > as.Date("2008-04-01")){
-    print(plt)
-    readline("")
-  }
+  # This was used to stop the mechanism after a certain date and have it stop-and
+  # -continue for the rest of the time
+  # if(end_Date > as.Date("2008-04-01")){
+  #   print(plt)
+  #   readline("")
+  # }
   
   # Increment "our vision" of the the prices and rates 
   end_Date <- end_Date + 1
